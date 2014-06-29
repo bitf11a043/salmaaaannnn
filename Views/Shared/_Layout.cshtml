@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head >
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title -Online Virtual Class</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="Images/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <script src="~/Scripts/jquery.fancybox-buttons.js"></script>
+        <link rel="stylesheet" href="~/Content/layout.css" type="text/css" />
+       
+    </head>
+
+    <body>
+
+            <div class="wrapper col0">
+                @RenderSection("LogIn", required: false)
+  
+</div>
+                <div class="wrapper col1">
+        <div id="header">
+    <div id="logo">
+      <h1>Virtual Class</h1>
+      
+    </div>
+    <div id="topnav">
+          @RenderSection("Menu", required: false)
+    </div>
+    <br class="clear" />
+  </div>
+            </div>
+        <div class="wrapper col2">
+  <div id="featured_slide">
+    <div class="featured_box"><a href="#"><img src="~/Images/me1.jpg" alt="" /></a>
+      <div class="floater">
+        <h2>1.  Developer</h2>
+        <p></p>
+        
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="~/Images/success.jpg" alt="" /></a>
+      <div class="floater">
+        <h2>2.  Offering Success Orientation For Each Student</h2>
+        <p></p>
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="~/Images/online.jpg" alt="" /></a>
+      <div class="floater">
+        <h2>3.  Helping Each Of Our Students Fulfill Their Potential</h2>
+        <p></p>
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="~/Images/flexibility.jpg" alt="" /></a>
+      <div class="floater">
+        <h2>4. Flexibility</h2>
+        <p></p>
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="~/Images/online2.jpg" alt="" /></a>
+      <div class="floater">
+        <h2>5. Preparing Students For Successful Future! </h2>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <div class="wrapper col1">
+        <div id="footer">
+    <div class="footbox">
+        <h2>SignUp With:</h2>
+      <ul>
+          <li>Social Media</li>
+      </ul>
+    </div>
+             <div class="footbox">
+        <h2>Facebook</h2>
+      <ul>          
+            <li><a href="https://www.facebook.com"><img src="/Images/facebook.jpg" /></a></li>
+      </ul>
+    </div>
+    
+    
+    <div class="footbox last">
+      <h2>Twitter</h2>
+      <ul>       
+        <li><a href="http://www.twitter.com"><img src="/Images/twitter.jpg" /></a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+        <div class="wrapper col5">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved -</p>
+    <p class="fl_right">Created By Salman Ahmad</p>
+    <br class="clear" />
+  </div>
+</div>
+  </div>          
+    </body>
+</html>

@@ -1,0 +1,71 @@
+﻿@model TermProject1._1.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Student</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.dob)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.dob)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.age)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.age)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.gender)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.gender)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Teacher.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Teacher.name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,116 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section LogIn
+{
+     <div id="topbar">
+    <div id="slidepanel">
+      <div class="topbox">
+        <h2>Teachers Login Here</h2>
+        <form action="../Home/Login" method="post">
+          <fieldset>
+            <legend>Teachers Login Form</legend>
+            <label >Email ID:
+              <input type="text" name="email" id="teachername" value="" />
+            </label>
+            <label >Password:
+              <input type="password" name="password" id="teacherpass" value="" />
+            </label>
+            <label for="teacherremember">
+              <input class="checkbox" type="checkbox" name="teacherremember" id="teacherremember" checked="checked" />
+              Remember me</label>
+            <p>
+              <input type="submit" name="teacherlogin" id="teacherlogin" value="Login" />
+             
+              
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <div class="topbox last">
+        <h2>Student Login Here</h2>
+        <form action="/Home/LoginS" method="post">
+          <fieldset>
+            <legend>Pupils Login Form</legend>
+            <label for="pupilname">Username:
+              <input type="text" name="email" id="pupilname" value="" />
+            </label>
+            <label for="pupilpass">Password:
+              <input type="password" name="password" id="pupilpass" value="" />
+            </label>
+            <label for="pupilremember">
+              <input class="checkbox" type="checkbox" name="pupilremember" id="pupilremember" checked="checked" />
+              Remember me</label>
+            <p>
+              <input type="submit" name="pupillogin" id="pupillogin" value="Login"  />
+              
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left">Log In Here &raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Administration</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+    }
+}
+@section Menu
+{
+    <ul>
+    <li><a href="/Home/Index">Home</a></li>
+    <li><a href="/Home/SignUp">Sign Up</a></li>
+    <li><a href="/Home/AboutUs">About Us</a></li>
+    <li><a href="/Home/ContactUs">Contact Us</a></li>
+        </ul>
+    
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>Virtual Class</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="~/Content/layout.css" type="text/css" />
+<script type="text/javascript" src="~/Scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.cycle.setup.js"></script>
+</head>
+<body>
+<div class="wrapper col3">
+  <div id="homecontent">
+    <div class="fl_left">
+      <div class="column2">
+        <ul>
+          <li>
+            <h1>Introduction</h1>
+            <p>Virtual Class is an online platform where students and instructors come together to learn and teach.</p>
+            <p>It displays updates as soon as they happen so you see changes in real time.</p>
+            <p>It provides a platform where student and instructor can interact any time.</p>
+          </li>
+          <li class="last">
+              <h1>Features For Instructors</h1>
+              <p>Instructors have full editorial control.</p>
+              <p>Real-time updates.</p>
+              <p>Class resources can be made public or private.</p>
+              <p>Instructor can post class related data at one place from where any student can download and can see any announcement made by the instructor.</p>
+          </li>
+        </ul>
+        <br class="clear" />
+      </div>
+      <div class="column2">
+        
+      </div>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>
+

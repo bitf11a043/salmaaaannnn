@@ -1,0 +1,87 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Menu
+{
+    <ul>
+    <li><a href="/Home/Index">Home</a></li>
+    <li><a href="/Home/AboutUs">About Us</a></li>
+        <li><a href="/Home/Logout">Logout</a></li>
+    <li><a href="/Home/ContactUs">Contact Us</a></li>
+        </ul>
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>About Us</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="~/Content/layout.css" type="text/css" />
+    <link href="~/Content/featured_slide.css" rel="stylesheet" />
+    <link href="~/Content/forms.css" rel="stylesheet" />
+    <link href="~/Content/loginslider.css" rel="stylesheet" />
+    <link href="~/Content/navi.css" rel="stylesheet" />
+    <link href="~/Content/tables.css" rel="stylesheet" />
+     <script type="text/javascript" src="~/Scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.cycle.setup.js"></script>
+     <script type="text/javascript" src="~/Scripts/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.fancybox-thumbs.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.mousewheel-3.0.6.pack.js"></script>
+        <link href="~/Content/jquery.fancybox-buttons.css" rel="stylesheet" type="Images/x-icon" />
+        <link href="~/Content/jquery.fancybox.css" rel="stylesheet"  type="Images/x-icon"/>
+        <link href="~/Content/jquery.fancybox-thumbs.css" rel="stylesheet" type="Images/x-icon"/>
+       
+</head>
+<body>
+
+   <div class="wrapper col3">
+  <div id="homecontent">
+    <div class="fl_left">
+      <div class="column2">
+        <ul>
+          <li>
+            <h2>Lipsum</h2>
+            <div class="imgholder">
+                <a href ="../Images/me2.jpg" class="fancybox" rel="group">
+                    <img src="../Images/me2.jpg" alt="" /></a>
+
+            </div>
+            <p>I am a student of BS INFORMATION TECHNOLOGY.</p>
+              <p>My institute name is "Punjab University College of Information Technology(PUCIT).</p>
+          </li>
+        </ul>
+        <br class="clear" />
+      </div>
+
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                maxWidth: 800,
+                maxHeight: 600,
+                fitToView: false,
+                width: '70%',
+                height: '70%',
+                autoSize: true,
+                closeClick: true,
+                openEfect: true,
+                closeEffect: 'none',
+            });
+        });
+</script>
+
+</body>
+</html>
+

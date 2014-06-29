@@ -1,0 +1,59 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Menu
+{
+    <ul>
+    <li><a href="/Home/Index">Home</a></li>
+    <li><a href="/Home/Logout">Logout</a></li>
+    <li><a href="/Home/FilesUploaded">Uploaded Files</a></li>
+    <li><a href="/Home/AboutUs">About Us</a></li>
+    <li><a href="/Home/ContactUs">Contact Us</a></li>
+        </ul>
+    
+}
+<!DOCTYPE html>
+<html xml:lang="EN" lang="EN" dir="ltr">
+<head>
+    <title>Student Pannel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="~/Content/layout.css" type="text/css" />
+    <link href="~/Content/featured_slide.css" rel="stylesheet" />
+    <link href="~/Content/forms.css" rel="stylesheet" />
+    <link href="~/Content/loginslider.css" rel="stylesheet" />
+    <link href="~/Content/navi.css" rel="stylesheet" />
+    <link href="~/Content/tables.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.slidepanel.setup.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.cycle.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.cycle.setup.js"></script>
+</head>
+<body>
+<div class="wrapper col3">
+  <div id="homecontent">
+    <div class="fl_left">
+      <div class="column2">
+        <ul>
+          <li>
+             <h1>Change Password</h1>
+            <div class="imgholder"><a href="/Student/Password"><img src="~/Images/password1.jpg" alt="" /></a></div>                     
+          </li>
+           <li class ="last">
+            <h1>View Own Details</h1>
+            <div class="imgholder"><a href="/Student/OwnDetails"><img src="~/Images/details1.jpg" alt="" /></a></div>            
+          </li>
+          <li >
+            <h1>Upload Files</h1>
+            <div class="imgholder"><a href="/Student/Upload"><img src="~/Images/upload.jpg" alt="" /></a></div>            
+          </li>
+        </ul>
+        <br class="clear" />
+      </div>     
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>
+
